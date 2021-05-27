@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-     <title>Marilis Escobar</title> 
+     <title>GLOSARIO</title> 
      <link rel="stylesheet" href="css/glosario.css"> 
      <link rel="stylesheet" href="css/header.css">
      <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -84,10 +84,14 @@
                
                <ul class="texto">
                
-                    <li>&lt;p&gt;&lt;/p&gt;La etiqueta p (párrafo) es el apropiado para distribuir el texto en párrafos.</li>
-                    <li>&lt;br&gt; Se utiliza para crear espacio entre parrafos</li>
-               </ul>
+                    <li>&lt;!--...--&gt; Se utiliza para agregar comentario dentro del código</li>
+                    <li>&lt;p&gt;&lt;/p&gt; La etiqueta p (párrafo) es el apropiado para distribuir el texto en párrafos.</li>
+                    <li>&lt;br&gt; (Solo se apretura) Se utiliza para crear espacio entre parrafos</li>
                
+                    <li>&lt;b&gt;&lt;/b&gt; Se utiliza para convertir el texto en negritas</li>
+                    <li>&lt;spam&gt;&lt;/spam&gt; Sirve para darle estilos a una parte del texto.</li>
+             
+               </ul>
                <br>
                <h3 class="subtitulos">HIPERENLACES</h3>
                   <p class="texto">es un elemento de un documento electrónico que hace referencia a otro recurso, como por ejemplo un punto específico de un documento o de otro documento.</p>
@@ -96,7 +100,8 @@
                   </ul>
                   <br>
                   <h3 class="subtitulos">TABLAS</h3>
-               <p class="texto">se utiliza el atributo colspan para unir casillas. Se utiliza el atributo rowspan para unir columnas.</p>
+               <p class="texto">Nos permiten almacenar los datos     de forma ordenada.
+                   <br>Se utiliza el atributo colspan para unir casillas. Se utiliza el atributo rowspan para unir columnas.</p>
                     
                <ul class="texto">
                     <li>&lt;table&gt;&lt;/table&gt;  La etiqueta table define una tabla. Una tabla va a poder tener diferentes filas y dentro de cada fila vamos a poder definir diferentes celdas.
@@ -134,19 +139,16 @@
               <ul class="texto">     
                   <li>&lt;img&gt;&lt;/img&gt; Se utiliza para colocar una imagen acompañado del atributo src que indica la dirección de la imagen.</li>
               </ul>
+              <img src="img/ejem.jpg" class="img">   
               <br>
     <h2 class="titulosverdes">PROPIEDADES CSS</h2>
              
-             <h3 class="subtitulos">COMO CONECTAR UN CSS CON EL HTML</h3>
-            <p class="parrafo1">Para enlazar una hoja de estilo utilizamos la etiqueta &lt;link&gt; se coloca en la cabecera HEAD del documento. Se coloca el argumento rel="stylesheet" seguido del argumento href="css/css.css (carpeta donde se encuentra el documento/css.css) para una hoja de estilo en cascada. Esta etiqueta solo se apertura.</p>
               
       </section>
       <br>
       <section>
+       <h2 class="titulosverdes">PROPIEDADES CSS DIRIGIDAS AL TEXTO</h2>
         <table class="tabla2" border="1">
-            <tr>
-                <td class="titulo_tabla2" colspan="3">PROPIEDADES CSS DIRGIDAS AL TEXTO</td>
-            </tr>
             <tr>
                 <td class="titulo_tabla2" colspan="3">TEXTO</td>
             </tr>
@@ -180,8 +182,16 @@
                 <td>Espacio entre palabras</td>
                 <td>normal - longitud</td>
             </tr>
+            </table>
+            <table class="tabla2" border="1">
             <tr>
+            
                 <td class="titulo_tabla2" colspan="3">FUENTES</td>
+            </tr>
+            <tr class="cont_T1">
+                <td>PROPIEDAD</td>
+                <td>DESCRIPCIÓN</td>
+                <td>VALORES</td>
             </tr>
                 <tr class="cont_T">
                 <td>Font-family</td>
@@ -209,9 +219,15 @@
                 <td>normal - bold - bolder - lighter - 100 - 200 - 300 - 400 - 500 - 600 - 700 - 800 - 900
            </td>
             </tr>
-            
+          </table>
+          <table class="tabla2" border="1">
             <tr>
                 <td class="titulo_tabla2" colspan="3">COLORES Y FONDOS</td>
+            </tr>
+            <tr class="cont_T1">
+                <td>PROPIEDAD</td>
+                <td>DESCRIPCIÓN</td>
+                <td>VALORES</td>
             </tr>
             <tr class="cont_T">
                 <td>background-size	</td>
@@ -248,8 +264,15 @@
                 <td>Color del texto</td>
                 <td>Nombre:black - HEX:#000000 - RGB:0,0,0</td>
             </tr>
+          </table>
+           <table class="tabla2" border="1">
             <tr>
                 <td class="titulo_tabla2" colspan="3">TABLAS</td>
+            </tr>
+            <tr class="cont_T1">
+                <td>PROPIEDAD</td>
+                <td>DESCRIPCIÓN</td>
+                <td>VALORES</td>
             </tr>
             <tr class="cont_T">
                 <td>border-collapse</td>
@@ -276,11 +299,52 @@
                 <td>Posición del título respecto la tabla</td>
                 <td>top - bottom</td>
             </tr>
-            <tr>
-                <td class="titulo_tabla2" colspan="3">PROPIEDADES CSS DIRGIDAS A OBJETOS</td>
+          </table>
+           <table class="tabla2" border="1">
+            <td class="titulo_tabla2" colspan="3">LISATAS</td>
+            <tr class="cont_T1">
+                <td>PROPIEDAD</td>
+                <td>DESCRIPCIÓN</td>
+                <td>VALORES</td>
             </tr>
+            <tr class="cont_T">
+                <td>list-style</td>
+                <td>propiedad compuesta</td>
+                <td>list-style-image - list-style-position - list-style-type</td>
+            </tr>
+            <tr class="cont_T">
+                <td>list-style-image</td>
+                <td>imagen del marcador</td>
+                <td>none - uri</td>
+            </tr>
+            <tr class="cont_T">
+                <td>list-style-position</td>
+                <td>posición del marcador</td>
+                <td>inside | outside</td>
+            </tr>
+            <tr class="cont_T">
+                <td>list-style-type</td>
+                <td>tipo de marcador</td>
+                <td>none  -  circle  -  disc  -  square  -  decimal  -  decimal-leading-zero  -  lower-alpha  -  upper-alpha  -  lower-greek  -  lower-latin  -  upper-latin  -  lower-roman  -  upper-roman  -  armenian  -  georgian  -  hebrew(-)  -  cjk-ideographic(-)  -  hiragana(-)  -  katakana(-)  -  hiragana-iroha(-)  -  katakana-iroha(-)</td>
+            </tr>
+          </table>
+          <br>
+           <h2 class="titulosverdes">PROPIEDADES CSS DIRIGIDAS A OBJETOS</h2>
+           <br>
+           <h3 class="subtitulos">MODELO DE CAJAS</h3>
+           <p class="texto">El modelo de caja es la manera en que se representan todos los elementos html en una página. Cada elemento genera una caja, el comportamiento de esa caja depende de su clasificación: si es de línea o de bloque.
+           <br>
+           A todas las cajas se les puede aplicar las siguientes propiedades: width, height, padding, margin, border, background. Lo particular de este concepto es que por defecto el width se refiere al ancho del contenido de un elemento (no al ancho total, de borde a borde).</p>
+          <p class="texto">En el gráfico muestro cómo se comporta cada una de las propiedades:</p>
+           <img class="img2" src="img/modelodecaja.png">
+           <table class="tabla2" border="1">
             <tr>
                 <td class="titulo_tabla2" colspan="3">Margin</td>
+            </tr>
+            <tr class="cont_T1">
+                <td>PROPIEDAD</td>
+                <td>DESCRIPCIÓN</td>
+                <td>VALORES</td>
             </tr>
             <tr class="cont_T">
                 <td>margin-top</td>
@@ -295,7 +359,7 @@
             <tr class="cont_T">
                 <td>margin</td>
                 <td>Tamaño del margen</td>
-                <td>longitud | porcentaje (1...4)</td>
+                <td>longitud - porcentaje (1...4)</td>
             </tr>
             <tr class="cont_T">
                 <td>margin-right</td>
@@ -307,8 +371,15 @@
                 <td>Tamaño del margen izquierdo</td>
                 <td>longitud - porcentaje - auto</td>
             </tr>
+            </table>
+              <table class="tabla2" border="1">
                <tr>
                 <td class="titulo_tabla2" colspan="3">PADING</td>
+            </tr>
+            <tr class="cont_T1">
+                <td>PROPIEDAD</td>
+                <td>DESCRIPCIÓN</td>
+                <td>VALORES</td>
             </tr>
             <tr class="cont_T">
                 <td>padding-top</td>
@@ -335,9 +406,180 @@
                 <td>Tamaño del relleno</td>
                 <td>longitud | porcentaje (1...4)</td>
             </tr>
+            </table>
+            <table class="tabla2" border="1">
+            <tr>
+                <td class="titulo_tabla2" colspan="3">BORDES</td>
+            </tr>
+            <tr class="cont_T1">
+                <td>PROPIEDAD</td>
+                <td>DESCRIPCIÓN</td>
+                <td>VALORES</td>
+            </tr>
+            <tr class="cont_T">
+                <td>border</td>
+                <td>cuatro bordes simultáneamente</td>
+                <td>border-color - border-width - border-style</td>
+            </tr>
+            <tr class="cont_T">
+                <td>border-right</td>
+                <td>borde derecho</td>
+                <td>border-color - border-width - border-style</td>
+            </tr>
+            <tr class="cont_T">
+                <td>border-left</td>
+                <td>borde izquierdo</td>
+                <td>border-color - border-width - border-style</td>
+            </tr>
+            <tr class="cont_T">
+                <td>border-top</td>
+                <td>borde superior</td>
+                <td>border-color - border-width - border-style</td>
+            </tr>
+            <tr class="cont_T">
+                <td>border-bottom</td>
+                <td>borde inferior</td>
+                <td>border-color - border-width - border-style</td>
+            </tr>
         </table>
-        
+        <table class="tabla2" border="1">
+            <tr>
+                <td class="titulo_tabla2" colspan="3">CONTENEDORES</td>
+            </tr>
+            <tr class="cont_T1">
+                <td>PROPIEDAD</td>
+                <td>DESCRIPCIÓN</td>
+                <td>VALORES</td>
+            </tr>
+            <tr class="cont_T">
+                <td>display</td>
+                <td>Comportamiento del contenedor</td>
+                <td>inline - block - inline-block - none</td>
+            </tr>
+            <tr class="cont_T">
+                <td>position</td>
+                <td>Esquema de posicionamiento</td>
+                <td>static - relative - absolute - fixed</td>
+            </tr>
+            <tr class="cont_T">
+                <td>top - right - bottom - left</td>
+                <td>Desplazamiento de la caja respecto al borde superior, derecho, inferior o izquierdo</td>
+                <td>longitud - porcentaje - auto</td>
+            </tr>
+            <tr class="cont_T">
+                <td>float</td>
+                <td>Posicionamiento flotante</td>
+                <td>left - right - none</td>
+            </tr>
+            <tr class="cont_T">
+                <td>clear</td>
+                <td>Control de cajas adyacentes a las float</td>
+                <td>none - left - right - both</td>
+            </tr>
+            <tr class="cont_T">
+                <td>z-index</td>
+                <td>Nivel de la capa</td>
+                <td>auto - número entero</td>
+            </tr>
+            <tr class="cont_T">
+                <td>box-sizing</td>
+                <td>Control de bordes y relleno en el comportamiento del contenedor</td>
+                <td>content-box - border-box</td>
+            </tr>
+            <tr class="cont_T">
+                <td>visibility</td>
+                <td>Muestra u oculta un elemento ocupando el espacio</td>
+                <td>visible - hidden</td>
+            </tr>
+        </table>
+        <br>
+        <h2 class="titulosverdes">PROPIEDADES CSS DIRIGIDAS A ELEMENTOS</h2>
+         <br>
+          <p class="texto">cada etiqueta HTML tiene un tipo de representación visual en un navegador, lo que habitualmente se suele denominar el tipo de caja.En principio, se parte de dos tipos básicos: inline y block.</p>
+         
+        <table class="tabla2" border="1">
+           <tr>
+                <td class="titulo_tabla2" colspan="3">TIPOS DE CONTENEDORES</td>
+            </tr>
+            <tr class="cont_T1">
+                <td>PROPIEDAD</td>
+                <td>DESCRIPCIÓN</td>
+                <td>VALORES</td>
+            </tr>
+            <tr class="cont_T">
+                <td>inline</td>
+                <td>Elemento en línea</td>
+                <td>El elemento se coloca en horizontal (un elemento a continuación del otro).</td>
+            </tr>
+            <tr class="cont_T">
+                <td>block</td>
+                <td>Elemento en bloque</td>
+                <td>El elemento se coloca en vertical (un elemento encima de otro).</td>
+            </tr>
+          </table>
+          <br>
+          <p class="texto">Atributos más importantes que puede tomar la propiedad CSS display:</p>
+         
+        <table class="tabla2" border="1">
+           <tr>
+                <td class="titulo_tabla2" colspan="2">OTROS TIPOS DE CONTENEDORES</td>
+            </tr>
+            <tr class="cont_T1">
+                <td>TIPOS DE CAJAS</td>
+                <td>DESCRIPCIÓN</td>
+            </tr>
+            <tr class="cont_T">
+                <td>block</td>
+                <td>Se apila en vertical. Ocupa todo el ancho disponible de su etiqueta contenedora.</td>
+            </tr>
+            <tr class="cont_T">
+                <td>inline</td>
+                <td>Se coloca en horizontal. Se adapta al ancho de su contenido. Ignora width o height.</td>
+            </tr>
+            <tr class="cont_T">
+                <td>inline-block</td>
+                <td>Combinación de los dos anteriores. Se comporta como inline pero no ignora width o height.</td>
+            </tr>
+            <tr class="cont_T">
+                <td>flex</td>
+                <td>Utiliza el modelo de cajas flexibles Flexbox. Muy útil para diseños adaptables.</td>
+            </tr>
+            <tr class="cont_T">
+                <td>inline-flex</td>
+                <td>La versión en línea (ocupa sólo su contenido) del modelo de cajas flexibles flexbox.</td>
+            </tr>
+            <tr class="cont_T">
+                <td>none</td>
+                <td>Hace desaparecer visualmente el elemento, como si no existiera.</td>
+            </tr>
+          </table>
+          <h3 class="subtitulos">FLEXBOX</h3>
+           <p class="texto">Flexbox es un sistema de elementos flexibles que llega con la idea de olvidar estos mecanismos y acostumbrarnos a una mecánica más potente, limpia y personalizable, en la que los elementos HTML se adaptan y colocan automáticamente y es más fácil personalizar los diseños. Está especialmente diseñado para crear, mediante CSS, estructuras de una sóla dimensión.</p>
+           
+           <table class="tabla2" border="1">
+           <tr>
+                <td class="titulo_tabla2" colspan="3">DIRECCIÓN DE LOS EJES</td>
+            </tr>
+            <tr class="cont_T1">
+                <td>PROPIEDAD</td>
+                <td>DESCRIPCIÓN</td>
+                <td>VALORES</td>
+            </tr>
+            <tr class="cont_T">
+                <td>flex-direction</td>
+                <td>Cambia la orientación del eje principal.</td>
+                <td>row - row-reverse - column - column-reverse</td>
+            </tr>
+            <tr class="cont_T">
+                <td>flex-wrap</td>
+                <td>Evita o permite el desbordamiento (multilinea).</td>
+                <td>nowrap - wrap - wrap-reverse</td>
+            </tr>
+          </table>
       </section>
+           <br>
+            <h3 class="subtitulos">COMO CONECTAR UN CSS CON EL HTML</h3>
+            <p class="parrafo1">Para enlazar una hoja de estilo utilizamos la etiqueta &lt;link&gt; se coloca en la cabecera HEAD del documento. Se coloca el argumento rel="stylesheet" seguido del argumento href="css/css.css (carpeta donde se encuentra el documento/css.css) para una hoja de estilo en cascada. Esta etiqueta solo se apertura.</p>
       
     </body>
    
